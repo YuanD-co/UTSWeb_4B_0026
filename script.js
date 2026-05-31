@@ -50,3 +50,12 @@ $(document).ready(function() {
         let total = hargaAwal * qty;
         $('#total-view').text('Rp ' + total.toLocaleString('id-ID'));
     }
+
+    $('#form-pesanan').submit(function(e) {
+        e.preventDefault();
+        $('#alert-sukses').slideDown(300);
+        setTimeout(function() {
+            $('#alert-sukses').slideUp(300);
+        }, 4000);
+    });
+});
