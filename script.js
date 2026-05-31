@@ -22,3 +22,18 @@ $(document).ready(function() {
             $('.menu-item[data-cat="' + kategori + '"]').fadeIn(300);
         }
     });
+
+    let hargaAwal = 0;
+
+    $('.btn-order').click(function() {
+        let nama = $(this).attr('data-name');
+        hargaAwal = parseInt($(this).attr('data-price'));
+        $('#menu-nama').val(nama);
+        $('#menu-harga').val('Rp ' + hargaAwal.toLocaleString('id-ID'));
+        $('#menu-qty').prop('disabled', false).val(1);
+        $('#btn-submit').prop('disabled', false);
+        hitungTotal();
+        $('html, body').animate({
+            scrollTop: $("#order").offset().top - 70
+        }, 500);
+    });
