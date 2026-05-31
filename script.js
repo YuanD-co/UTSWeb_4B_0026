@@ -37,3 +37,7 @@ $(document).ready(function() {
             scrollTop: $("#order").offset().top - 70
         }, 500);
     });
+
+     $('#menu-qty').on('input change', function() {
+        hitungTotal();
+    });
