@@ -38,6 +38,15 @@ $(document).ready(function() {
         }, 500);
     });
 
-     $('#menu-qty').on('input change', function() {
+    $('#menu-qty').on('input change', function() {
         hitungTotal();
     });
+
+    function hitungTotal() {
+        let qty = parseInt($('#menu-qty').val());
+        if (isNaN(qty) || qty < 1) {
+            qty = 1;
+        }
+        let total = hargaAwal * qty;
+        $('#total-view').text('Rp ' + total.toLocaleString('id-ID'));
+    }
