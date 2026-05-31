@@ -5,3 +5,13 @@ body{
 .hero{
     background:#f3e6d7;
 }
+
+.btn-menu{
+    background:#5b341d;
+    color:white;
+}
+
+.btn-menu:hover{
+    background:#3d2314;
+    color:white;
+}
