@@ -6,8 +6,48 @@
     <title>Bakso Pak Ahmad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fbf8f3; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        /* custom warna tema bakso */
+        .bg-brown { background-color: #3d251d ; }
+        .text-brown { color: #3d251d ; }
+        .btn-brown { background-color: #3d251d ; color: #fff ; }
+        .btn-brown:hover { background-color: #261611 ; color: #fff ; }
+        .btn-outline-brown { border: 2px solid #3d251d ; color: #3d251d !; font-weight: 500; }
+        .btn-outline-brown:hover { background-color: #3d251d ; color: #fff ; }
+    </style>
 </head>
 <body>
-
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <i class="fa-solid fa-bowl-food fa-2x me-2 text-warning"></i>
+                <div>
+                    <span class="fw-bold d-block text-brown font-serif h4 mb-0">Bakso Pak Ahmad</span>
+                    <small class="text-muted d-block" style="font-size: 0.7rem;">Hangatnya Bikin Dekat</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium">
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#about">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#testi">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#order">Order</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark px-3" href="#faq">FAQ</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-brown px-4" href="#order">Pesan Sekarang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
